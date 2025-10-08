@@ -1,39 +1,35 @@
-# CNN_GTSRB_Recognition
+# Klasifikasi Rambu-Rambu lalu lintas dengan menggunakan python & keras dengan CNN ( Convolutional Neural Network )
 
-## Overview
+## Deskripsi
 
-The "Traffic Sign Classification" project introduces an innovative approach to improve road safety and traffic management through the application of Convolutional Neural Networks (CNNs). As vehicular traffic continues to grow exponentially, the accurate and real-time recognition of traffic signs becomes crucial for preventing accidents and ensuring orderly traffic flow. Leveraging the power of CNNs, we have developed a robust and efficient traffic sign recognition system capable of accurately identifying and classifying a diverse range of traffic signs commonly found on roads and highways.
+Proyek "Klasifikasi Rambu Lalu Lintas" memperkenalkan pendekatan inovatif untuk meningkatkan keselamatan jalan dan manajemen lalu lintas melalui penerapan Convolutional Neural Networks (CNN). Seiring dengan pertumbuhan lalu lintas kendaraan yang terus meningkat secara eksponensial, pengenalan rambu lalu lintas yang akurat dan real-time menjadi sangat penting untuk mencegah kecelakaan dan memastikan kelancaran arus lalu lintas. Dengan memanfaatkan kekuatan CNN, kami telah mengembangkan sistem pengenalan rambu lalu lintas yang tangguh dan efisien, yang mampu mengidentifikasi dan mengklasifikasikan berbagai macam rambu lalu lintas yang umum ditemukan di jalan raya.
 
-## Dataset and Preprocessing
+## Dataset dan Preprocessing Data
 
-Throughout the project, we collected and preprocessed a comprehensive dataset of traffic sign images, incorporating diverse variations in lighting conditions, weather scenarios, and occlusions. This dataset preparation ensures that our model can handle real-world challenges and deliver reliable results.
+Selama proyek ini, kami mengumpulkan dan melakukan pra-pemrosesan pada dataset gambar rambu lalu lintas yang komprehensif, yang mencakup berbagai variasi dalam kondisi pencahayaan, skenario cuaca, dan oklusi (objek yang menghalangi). Persiapan dataset ini memastikan bahwa model kami dapat menangani tantangan di dunia nyata dan memberikan hasil yang andal.
 
-## Model Architecture
+## Model Arsitektur
 
-The heart of our project is the Convolutional Neural Network model, specifically designed for traffic sign classification. The model architecture is as follows:
+Inti dari proyek kami adalah model Convolutional Neural Network yang dirancang khusus untuk klasifikasi rambu lalu lintas. Arsitektur modelnya adalah sebagai berikut:
 
-- **Convolutional Layer 1:** 60 filters of size (5,5) with ReLU activation
-- **Convolutional Layer 2:** 60 filters of size (5,5) with ReLU activation
-- **Max Pooling Layer:** Pooling size (2,2)
-- **Convolutional Layer 3:** 15 filters of size (3,3) with ReLU activation
-- **Max Pooling Layer:** Pooling size (2,2)
-- **Dropout Layer:** Dropout rate of 0.5 to reduce overfitting
+- **Convolutional Layer 1:** 60 filter berukuran (5,5) dengan aktivasi ReLU
+- **Convolutional Layer 2:** 60 filter berukuran (5,5) dengan aktivasi ReLU
+- **Max Pooling Layer:** Ukuran Pooling (2,2)
+- **Convolutional Layer 3:** 15 filter berukuran (3,3) dengan aktivasi ReLU
+- **Max Pooling Layer:** Ukuran Pooling (2,2)
+- **Dropout Layer:** Tingkat Dropout 0,5 untuk mengurangi overfitting
 - **Flatten Layer**
-- **Dense Layer 1:** 500 units with ReLU activation
-- **Dropout Layer:** Dropout rate of 0.5
-- **Dense Layer 2:** Output layer with softmax activation (number of classes = 43 in this case, but it can be adapted for different datasets)
+- **Dense Layer 1:** 500 unit dengan aktivasi ReLU
+- **Dropout Layer:** Tingkat Dropout 0,5
+- **Dense Layer 2:** OLayer output dengan aktivasi softmax (43)
 
-The model is compiled using the Adam optimizer with a learning rate of 0.001 and categorical cross-entropy loss, and we track the accuracy as a performance metric.
+Model ini dikompilasi menggunakan optimizer Adam dengan learning rate 0.001 dan loss function categorical cross-entropy. Dengan melacak akurasi sebagai metrik performa.
 
-## Model Performance
+## Performa model
 
-Our CNN model exhibited remarkable performance during training:
+Model CNN kami menunjukkan performa yang luar biasa selama pelatihan:
 
-- Achieved an accuracy of 95.79% in just 8 epochs.
-- Achieved a low loss value of 0.1337.
+- Mencapai akurasi 95.79% hanya dalam 8 epochs.
+- Mencapai nilai loss yang rendah, yaitu 0.1337.
 
-This high accuracy and low loss demonstrate the model's effectiveness in accurately identifying and classifying traffic signs.
-
-## Conclusion
-
-Overall, this project serves as a robust foundation for ongoing research and development in the field of computer vision and deep learning. It holds the potential to revolutionize the future of transportation and road safety by ensuring accurate traffic sign recognition, ultimately contributing to safer and more efficient roadways.
+Akurasi yang tinggi dan loss yang rendah ini menunjukkan efektivitas model dalam mengidentifikasi dan mengklasifikasikan rambu lalu lintas secara akurat.
