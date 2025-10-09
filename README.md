@@ -29,7 +29,7 @@ Model ini dikompilasi menggunakan optimizer Adam dengan learning rate 0.001 dan 
 
 Model CNN kami menunjukkan performa yang luar biasa selama pelatihan:
 
-- Mencapai akurasi 95.79% hanya dalam 8 epochs.
+- Mencapai akurasi 95.40% hanya dalam 9 epochs.
 - Mencapai nilai loss yang rendah, yaitu 0.1337.
 
 Akurasi yang tinggi dan loss yang rendah ini menunjukkan efektivitas model dalam mengidentifikasi dan mengklasifikasikan rambu lalu lintas secara akurat.
